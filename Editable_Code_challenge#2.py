@@ -1,4 +1,4 @@
-amount = int(input (
+amount = eval(input (
     "How Much money would you like to deposit? "
 ))
 
