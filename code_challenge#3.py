@@ -17,7 +17,7 @@ base_cost = (weight * 2.50) + (distance * 0.15)
 if weight <= 2.0 and distance <= 100 and is_express is False and is_international is False:
 
 	print("\n\n==YOUR ITEM IS FREELY SHIPPED==")
-	print("====PACKAGE INFO====", "\n", weight, "kg","\n", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
 	print("==AMOUNT TOTAL $0==" )
 
 
@@ -25,14 +25,14 @@ elif is_express is True and is_international is True:
 
 	Total = (base_cost * 1.40) + 50
 	print("\n\n==YOUR ITEM IS INTERNATIONALLY EXPRESSED==")
-	print("====PACKAGE INFO====", "\n", weight, "kg","\n", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
 	print("\n==AMOUNT TOTAL = $", Total)
 
 elif is_international is True and weight > 20:
 
 	Total = (base_cost * 1.20) + 25
 	print("\n\n==YOUR ITEM IS EXPRESSED OR INTERNATIONALLY==")
-	print("====PACKAGE INFO====", "\n", weight, "kg","\n", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ","Item Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
 	print("\n==AMOUNT TOTAL = $", Total)
 
 
@@ -41,7 +41,7 @@ elif weight > 30 or distance > 1000:
 	
 	Total = base_cost + 30
 	print("\n\n==YOUR ITEM IS OVERSIZED==")
-	print("====PACKAGE INFO====", "\n", weight, "kg","\n", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
 	print("\n==AMOUNT TOTAL = $", Total)
 
 
@@ -49,6 +49,6 @@ elif weight > 30 or distance > 1000:
 else:
 	Total = base_cost
 	print("\n\n==STANDARD RATE==")
-	print("====PACKAGE INFO====", "\n", weight, "kg","\n", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
 	print("\n==AMOUNT TOTAL = $", Total)
 
