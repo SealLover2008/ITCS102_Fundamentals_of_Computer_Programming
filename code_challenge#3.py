@@ -22,3 +22,15 @@
 
 #Total = base_cost
 
+
+#Shipping cost Calculator
+
+
+name_Sender = input(" What is your name")
+
+#Type of item to ship
+
+isFragile == True
+is_express == True
+is_international == True
+
