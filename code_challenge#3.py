@@ -18,6 +18,7 @@ if weight <= 2.0 and distance <= 100 and is_express is False and is_internationa
 
 	print("\n\n==YOUR ITEM IS FREELY SHIPPED==")
 	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print(" ITEM is Fragile ", is_Fragile)
 	print("==AMOUNT TOTAL $0==" )
 
 
@@ -26,6 +27,7 @@ elif is_express is True and is_international is True:
 	Total = (base_cost * 1.40) + 50
 	print("\n\n==YOUR ITEM IS INTERNATIONALLY EXPRESSED==")
 	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print(" ITEM is Fragile ", is_Fragile)
 	print("\n==AMOUNT TOTAL = $", Total)
 
 elif is_international is True and weight > 20:
@@ -33,6 +35,7 @@ elif is_international is True and weight > 20:
 	Total = (base_cost * 1.20) + 25
 	print("\n\n==YOUR ITEM IS EXPRESSED OR INTERNATIONALLY==")
 	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ","Item Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print(" ITEM is Fragile ", is_Fragile)
 	print("\n==AMOUNT TOTAL = $", Total)
 
 
@@ -42,6 +45,7 @@ elif weight > 30 or distance > 1000:
 	Total = base_cost + 30
 	print("\n\n==YOUR ITEM IS OVERSIZED==")
 	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print(" ITEM is Fragile ", is_Fragile)
 	print("\n==AMOUNT TOTAL = $", Total)
 
 
@@ -50,5 +54,6 @@ else:
 	Total = base_cost
 	print("\n\n==STANDARD RATE==")
 	print("\n====PACKAGE INFO====", "\n","\nItem Weight: ", weight, "kg","\n","Item Distance Travel: ", distance, "km", "\n", "FROM: ", name_Sender, "\n", "Name OF ITEM: ", name_Item)
+	print(" ITEM is Fragile ", is_Fragile)
 	print("\n==AMOUNT TOTAL = $", Total)
 
