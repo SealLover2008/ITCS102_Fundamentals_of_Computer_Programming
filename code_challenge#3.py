@@ -6,9 +6,9 @@ name_Sender = input("\n== What is your name == " )
 name_Item = input("\n== What would the item Be? == ")
 weight = float(input( "\n== How heavy is the Item? ==  "))
 distance = float(input( "\n== How far is the distance to be traveled? ==  " ))
-is_express = input("\n== Is Item Express? Yes or no ==  ") == "Yes" 
-is_international= input("\n== Is Item Internationally shipped? Yes or no ==  ") == "Yes" 
-is_Fragile = input("\n== Is Item Fragile? Yes or no ==  ") == "Yes"
+is_express = input("\n== Is Item Express? yes or no ==  ") == "yes" 
+is_international= input("\n== Is Item Internationally shipped? yes or no ==  ") == "yes" 
+is_Fragile = input("\n== Is Item Fragile? yes or no ==  ") == "yes"
 
 base_cost = (weight * 2.50) + (distance * 0.15)
 
