@@ -1,4 +1,18 @@
-name = input("What is your name?---->    ")
+#Create account screen
+print("=====CREATE AN ACCOUNT======")
+user = input("Please enter Username--->  ")
+user_password = input("Please enter Username Password--->  ")
+
+#login screen
+
+
+print("======LOGIN======")
+user_login = input("Please enter Username--->  ")
+user_login_password = input("Please enter Username Password--->  ")
+
+if user == user_login and user_password == user_login_password:
+    print("Access Granted")
+    name = input("What is your name?---->    ")
 job = input("What is your Name---->    ")
 age = int(input("How Old are you?---->   "))
 name_Collateral = input("What is your collateral?---->    ")
@@ -35,3 +49,6 @@ if credit_score >= 600 and credit_score < 750:
 #Tier 3 eligibility criteria for loan approval
 if credit_score < 600:
   print("You are not eligible for a loan at this time. Please work on improving your credit score and financial situation before applying again.")
+else: 
+    print("access Denied")
+    
