@@ -15,33 +15,52 @@ base_fee = 0.0
 
 #baseline requirements
 if age >= 21 and yrs_b >= 2 and has_defaulted is False:
-    max_Limit =  0.03 * rev
+    max_Limit =  3 * rev
 
 
 
     if cc >= 720 and collat_val >= max_Limit:
         if rev >= 50000:
-            base_fee = max_Limit * 0.015
-            print("Tier 1")
-
+            base_fee = max_Limit * 1.5
+            print(base_fee, "Tier 1", max_Limit)
         else:
-             base_fee = max_Limit * 0.025
-             print("Tier 1.2")
+             base_fee = max_Limit * 2.5
+             print(base_fee, "Tier 1.2", max_Limit)
+
+             if collat_val % 5000 != 0:
+                 base_fee += 250.00
+             else:
+                print("You are not eligible for a credit card due to insufficient collateral or low credit score.  ")
+                
+                 
+
+            
+      
+             
             
 
 
-    if cc <= 620 or cc < 720 and collat_val >= max_Limit:
-        max_Limit = 0.15 * rev
+    if cc == 620 or cc < 720 and collat_val >= max_Limit:
+
         if yrs_b >= 5:
-            base_fee = max_Limit * 0.02
-            print("Tier 2")
+            base_fee = max_Limit * 2
+            print(base_fee, "Tier 2", max_Limit)
+
+
+
         else:
-            base_fee = max_Limit * 0.035
-            print("Tier 2.2")
+            base_fee = max_Limit * 3.5
+            print(base_fee, "Tier 2.2", max_Limit) 
+
+            if collat_val % 5000 != 0:
+                base_fee += 250.00
+            else:
+                print("You are not eligible for a credit card due to insufficient  low credit score.  ")
+               
 
 
     if cc < 620:
-        print("You are not eligible for a credit card due to low credit score.")
+        print("You are not eligible for a credit card due to low credit score. / Tier 3 ")
 
 else:
     print("You are not eligible for a credit card due to age, years as a customer, or previous defaults.")
