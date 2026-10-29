@@ -1,20 +1,15 @@
-for x in range(1, 6):
-    for y in range(1, x + 1):
-        print("*", end=' ')
-    print()
-    if x == 5:
-        for z in range(4, 0, -1):
-            for w in range(1, z + 1):
-                print("*", end=' ')
-            print()
-            if z == 5:
-                  if x == 5:
-                      for z in range(4, 0, -1):
-                          for w in range(1, z + 1):
-                              print("*", end=' ')
-                          print()
-           
-           
-           
+rows = int(input("Enter the number of rows: "))
 
-    
+for i in range(0, rows):
+    for j in range(0, rows - i - 1):
+        print(" ", end="")
+    for j in range(0, i + 1):
+        print("* ", end="")
+    print()
+
+for i in range(0, rows - 1):
+    for j in range(0, i + 1):
+        print(" ", end="")
+    for j in range(0, rows - i - 1):
+        print("* ", end="")
+    print()
