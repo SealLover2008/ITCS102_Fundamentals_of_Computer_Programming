@@ -1,14 +1,11 @@
-n = 5
+input = int(input("Enter the size of the box: "))
 
 
-for x in range (n):
-    for y in range (n):
-        if x == 0 or y == 0 or x == 4 or y == 4:
+for x in range (input):
+    for y in range (input):
+        if x == 0 or y == 0 or x == input - 1 or y == input - 1:
             print("*", end=" ")
         else:
             print(" ", end=" ")
     print() 
      
-
-
-
