@@ -7,9 +7,8 @@ while isContinuing:
     if ans == True:
         title = input("Enter the title of an anime: ")
         anime.append(title)
-        ans = input("Do you want to add another title of an anime (y/n): ") == "y"
+        print(anime)
       
     else:
         isContinuing = False
         print(anime)
-
