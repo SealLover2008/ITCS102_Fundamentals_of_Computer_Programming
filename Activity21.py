@@ -11,7 +11,7 @@ while True:
     print("===============================")
     print("\n1. Sakay\n2. Priority Seat\n3. Para Po!\n4. Baba Sa Pinto\n5. Baba Sa Harap\n6. Seat Check \n7. Reverse Route\n8. Exit")
     print("\n===============================")
-    choice = int(input("\nEnter your choice: "))
+    choice = int(input("Enter your choice: "))
 
     if choice == 1:
         if len(passenger) == seats:
