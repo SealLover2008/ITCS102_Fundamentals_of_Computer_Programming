@@ -1,20 +1,34 @@
-fruits = ["apple", "banana", "cherry", "date", "fig", "grape"]
 
-print(fruits[-1]) 
-fruits_d = {"Bilog_m": "longgan", "maasim": "lipute"}
-print(fruits_d["Bilog_m"])
+kuroko = ["Phantom Sixth Man", "Misdirection"]
+kuroko_no_basket = {
+    "Kuroko": ["Phantom Sixth Man", "Misdirection"],
+    "Kagami": ["Seirin's ace", "Jumping ability"],
+    "Aomine": ["Unpredictable scorer", "Street basketball"],
+    "Akashi": ["Team captain", "Emperor Eye"],
+    "Midorima": ["High accuracy shooter", "Three-point shots"],
+    "Kise": ["Copy ability", "Perfect Copy"],
+    "Murasakibara": ["Defensive powerhouse", "Great strength"]}
 
-#2d list
-Lakers = ["Lebron", "Davis", "Westbrook", "Caldwell-Pope"]
-Celtics = ["Tatum", "Brown", "Smart", "Horford"]
-old_teams = [Lakers, Celtics]
-new_teams = ["Misamis heat", "San Antonio Brgy.12", "Washington Candelaria", "Huskers", "Stolen Gate Warroirs"]
+anime = {}
+anime["Sports Anime"] = {"Kuroko no Basket": kuroko_no_basket}
 
-laban = [{"Mamaw": old_teams, "new_teams": new_teams}]
+jjk = ["Gojo", "Strongest jujutsu sorcerer", "Limitless"]
+anime["Shonen"] = {"Jujutsu Kaisen": jjk}
+sports = {"Kuroko no Basket": kuroko_no_basket}
+anime["Sports Anime"] = sports
 
-print(laban[0]["Mamaw"][0][1])
-print(laban[0]["new_teams"][2])
+nba = {
+    "Stephen Curry": ["Point Guard", "Elite three-point shooter"],
+    "Kevin Durant": ["Small Forward", "Scoring ability"],
+    "Kobe Bryant": ["Shooting Guard", "Fadeaway"],
+    "Michael Jordan": ["Shooting Guard", "Mid-range scoring"],
+    "LeBron James": ["Small Forward", "Powerful drive"]}
 
+anime["NBA"] = {"Players": nba}
+anime["Sports Anime"]["Kuroko no Basket"]["Kuroko"][1] = "Vanishing Drive"
+anime["NBA"]["Players"]["Stephen Curry"][1] = "Deep three-point shooting"
+curry = ["Point Guard", "Elite three-point shooter"]
+nba["Stephen Curry"] = curry
 
-
-
+print(anime["NBA"]["Players"]["LeBron James"])
+print(sports)
