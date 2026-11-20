@@ -23,21 +23,18 @@ kuroko_no_basket = {
     "Akashi": akashi,
     "Midorima": midorima,
     "Kise": kise,
-    "Murasakibara": murasakibara
-}
+    "Murasakibara": murasakibara}
 
 jujutsu_kaisen = {
     "Gojo": gojo,
-    "Yuji": yuji
-}
+    "Yuji": yuji}
 
 nba = {
     "Stephen Curry": curry,
     "Kevin Durant": durant,
     "Kobe Bryant": kobe,
     "Michael Jordan": jordan,
-    "LeBron James": lebron
-}
+    "LeBron James": lebron}
 
 sports = {"Kuroko no Basket": kuroko_no_basket}
 shonen = {"Jujutsu Kaisen": jujutsu_kaisen}
@@ -46,8 +43,7 @@ basketball = {"Players": nba}
 anime = {
     "Sports Anime": sports,
     "Shonen": shonen,
-    "NBA": basketball
-}
+    "NBA": basketball}
 
 print("=== 1. Going down one level at a time ===")
 print(anime["Sports Anime"]["Kuroko no Basket"]["Kuroko"][1])
